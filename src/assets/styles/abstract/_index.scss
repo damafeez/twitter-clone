@@ -1,0 +1,13 @@
+// mitigate scss compile issue mistaking max/min for scss equivalence
+@function max($arguments...) {
+  @return m#{a}x(#{$arguments});
+}
+
+@function min($arguments...) {
+  @return m#{i}n(#{$arguments});
+}
+
+// variables
+$tablet: 640px;
+$laptop: 1024px;
+$desktop: 1280px;

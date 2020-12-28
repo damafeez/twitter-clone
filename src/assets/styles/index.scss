@@ -1,0 +1,129 @@
+// resets
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+//
+:root {
+  --background: #15202b;
+}
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  @media (min-width: $tablet) {
+    font-size: initial;
+  }
+}
+// text
+h1 {
+  font-size: 3.125rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+p {
+  margin: 0;
+  p + & {
+    margin-top: 1em;
+  }
+}
+
+a {
+  display: inline-block;
+  color: currentColor;
+  text-decoration: none;
+  text-underline-position: under;
+  &:not(.no-underline):hover {
+    text-decoration: underline;
+  }
+}
+
+section,
+header {
+  min-height: min(50rem, 100vh);
+}
+section,
+header,
+nav,
+footer,
+.container {
+  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  @media (min-width: $tablet) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+img {
+  max-width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+svg.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+[aria-hidden='true'] {
+  display: none;
+}
