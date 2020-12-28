@@ -32,6 +32,10 @@ button {
 //
 :root {
   --background: #15202b;
+  --text-color: white;
+  --border-color: #37454d;
+  --blue: rgba(29, 161, 242, 1);
+  --light-blue: rgba(29, 161, 242, 0.1);
 }
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -96,12 +100,8 @@ nav,
 footer,
 .container {
   transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
-  @media (min-width: $tablet) {
-    padding-left: 7%;
-    padding-right: 7%;
-  }
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 img {
   max-width: 100%;
@@ -126,4 +126,10 @@ svg.icon {
 }
 [aria-hidden='true'] {
   display: none;
+}
+.transition {
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s;
+}
+.blue {
+  color: var(--blue);
 }
